@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="lineage-rpi" fetch="git://github.com/lineage-rpi/" />
+    <remote name="lineageOS" fetch="git://github.com/lineageOS/" />
+    <remote name="rpi-droid"   fetch="https://gitlab.com/rpi-droid/rpi4/lineage" />
+    <remote name="jimmywu"   fetch="git://github.com/02047788a/" />
+
+    <!-- Raspberry Pi -->
+    <project path="device/brcm/rpi4" name="android_device_brcm_rpi4" remote="jimmywu"   revision="master"       />
+    <project path="vendor/brcm"      name="proprietary_vendor_brcm"  remote="lineage-rpi" revision="lineage-16.0"/>
+    <!-- <project path="hardware/rpi"     name="android_hardware_rpiˇ"    remote="rpi-droid" revision="cm-14.1" />-->
+    <!-- <project path="hardware/rpi"     name="android_hardware_rpi4"    remote="jimmywu" revision="master" /> -->
+    
+    <!-- kernel -->
+    <project path="kernel/brcm/rpi4" name="android_kernel_brcm_rpi4" remote="lineage-rpi" revision="lineage-16.0" />
+
+    <project path="prebuilts/lineage-sdk" name="android_prebuilts_lineage-sdk" remote="lineageOS" revision="lineage-16.0" />
+    <!-- LineageOS additions -->
+    <!-- <remove-project name="platform/external/i2c-tools"/> -->
+    <project path="external/i2c-tools" name="android_external_i2c-tools"      remote="lineage-rpi" revision="lineage-16.0"/>
+
+    <remove-project name="platform/external/mesa3d"/>
+    <project path="external/mesa3d"    name="android_external_mesa3d"         remote="lineage-rpi" revision="lineage-16.0"/>
+    
+    <!-- <remove-project name="platform/external/minigbm"/> -->
+    <project path="external/minigbm"   name="android_external_minigbm"        remote="lineage-rpi" revision="lineage-16.0"/>
+    
+    <remove-project name="platform/external/libdrm"/>
+    <project path="external/libdrm"    name="android_external_libdrm"         remote="lineage-rpi" revision="lineage-16.0"/>
+    
+    <remove-project name="platform/external/drm_hwcomposer"/>
+    <project path="external/drm_hwcomposer" name="android_external_drm_hwcomposer" remote="lineage-rpi" revision="lineage-16.0"/>
+    
+    <remove-project name="platform/external/swiftshader"/>
+    <project path="external/swiftshader" name="android_external_swiftshader" remote="lineage-rpi" revision="lineage-15.1" />
+
+</manifest>
