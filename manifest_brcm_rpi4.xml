@@ -10,7 +10,7 @@
     <project path="vendor/brcm"            name="proprietary_vendor_brcm"         remote="lineage-rpi" revision="lineage-17.1"/>
     
     <!-- linux kernal -->
-    <project path="kernel/brcm/rpi"        name="android_kernel_brcm_rpi"         remote="lineage-rpi" revision="lineage-17.1" />
+    <project path="kernel/brcm/rpi"        name="android_kernel_brcm_rpi"         remote="lineage-rpi" revision="lineage-17.1-20200815" />
 
     <!-- Graphics -->
     <remove-project name="platform/external/mesa3d"/>
